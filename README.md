@@ -10,19 +10,19 @@ mapping(uint => string) UserIdToName // girilen ID'ye sahip kişinin ismini dön
 # MSG.SENDER
 //msg.sender fonksiyonu kullanan kişinin adresini temsil eder
 
-AccountBalance[msg.sender]++;// fonksiyonu çalıştıran kişinin balance'ını 1 arttır.
+AccountBalance[msg.sender]++; // fonksiyonu çalıştıran kişinin balance'ını 1 arttır.
 
 
 
 # REQUİRE
-//require if gibi çalışır genellikle o fonksiyonun birden fazla kez çağrılmasını önler
+//require if gibi çalışır şartı sağlamazsa fonksiyondan çıkar, genellikle o fonksiyonun birden fazla kez çağrılmasını önler
 
-require(ownerZombiCount[msg.sender]==0) // msg.sender'ın 0 tane zombisi varsa çalıştır anlamına gelir
+require(ownerZombiCount[msg.sender]==0,"u already have a zombie") // msg.sender'ın 0 tane zombisi varsa çalıştır yoksa metini yazdır.
 
 # STORAGE VE MEMORY
-//memory bilgiyi geçici hafızada tutar ve fonksiyon bitince eski değerini geri alır
+//Memory bilgiyi geçici hafızada tutar ve fonksiyon bitince eski değerini geri alır
 
-//fakat storage fonksiyon bitse de aynı değeri tutar aynı ram ve harddisk ilişkisi gibi 
+//Storage fonksiyon bitse de aynı değeri tutar aynı ram ve harddisk ilişkisi gibi 
 
 Sandwich storage mySandwich = sandwiches[_index];//mySandwich sandwiches dizisine atılır.
 mySandwich.status = "eaten";//mySandwich'in status değeri fonksiyon bitse bile "eaten" olarak kalır.
@@ -32,7 +32,7 @@ anotherSandwich.status = "eaten";//anotherSandwich'in status değeri fonksiyon b
 
 
 # INTERNAL VE EXTERNAL
-//internal private ile aynı işlevi görüyor fakat miraslama yapılan contract ile erişilebilir hale getiriyor
+//Internal private ile aynı işlevi görüyor fakat miraslama yapılan contract ile erişilebilir hale getiriyor
 
 //External ise public ile aynı işlevi görüyor fakat contract içinden çağrılamıyor sadece dışarıdan çağırılabiliyor
 
