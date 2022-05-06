@@ -21,6 +21,7 @@ require(ownerZombiCount[msg.sender]==0) // msg.sender'ın 0 tane zombisi varsa �
 
 # STORAGE VE MEMORY
 //memory bilgiyi geçici hafızada tutar ve fonksiyon bitince eski değerini geri alır
+
 //fakat storage fonksiyon bitse de aynı değeri tutar aynı ram ve harddisk ilişkisi gibi 
 
 Sandwich storage mySandwich = sandwiches[_index];//mySandwich sandwiches dizisine atılır.
@@ -32,6 +33,7 @@ anotherSandwich.status = "eaten";//anotherSandwich'in status değeri fonksiyon b
 
 # INTERNAL VE EXTERNAL
 //internal private ile aynı işlevi görüyor fakat miraslama yapılan contract ile erişilebilir hale getiriyor
+
 //External ise public ile aynı işlevi görüyor fakat contract içinden çağrılamıyor sadece dışarıdan çağırılabiliyor
 
 function eat() internal{}
