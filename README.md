@@ -3,7 +3,7 @@
 # MAPPING
 //mapping girilen değere göre başka bir değeri döndürmeye yarıyor
 
-mapping(address => uint)  public AccountBalance; // Girilen adresin balance'ını geri döndürüyor.
+mapping(address => uint)  public AccountBalance; // Girilen adresin balance'ını geri döndürüyor. 
 mapping(uint => string) UserIdToName // girilen ID'ye sahip kişinin ismini döndürür.
 
 # MSG.SENDER
