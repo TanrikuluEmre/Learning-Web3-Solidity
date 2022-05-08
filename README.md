@@ -105,7 +105,9 @@ modifier sandwich(){
 //Constructorlar contract deploy edildiğinde ilk başta ve bir kez çağrılır.
 
 address public owner;
+
 uint public x;
+
 constructor(uint _x) {
    owner = msg.sender;
    x=_x;
