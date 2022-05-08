@@ -74,7 +74,7 @@ assert(c>b);
 
 modifier whenNotPaused(){
    require(!paused,"paused");
-   _;
+   _ ;
 }
 
 function inc() external whenNotPaused{
@@ -85,18 +85,18 @@ function inc() external whenNotPaused{
 
 modifier cap(uint _x){
    require(_x<100,"x>=100");
-   _;
+   _ ;
 }
 
 function incBy(uint _x) external cap(_x){
    count+=_x;
 }
 
-//**Sandwich Modifier** : Modifier'ın "_;"dan önceki kodları çalışır, sonra main fonksiyon(_;) ,daha sonra "_;"dan sonraki kodlar çalışır
+//**Sandwich Modifier** : Modifier'ın "_ ;"dan önceki kodları çalışır, sonra main fonksiyon(_ ;) ,daha sonra "_ ;"dan sonraki kodlar çalışır
 
 modifier sandwich(){
    count++;
-   _;
+   _ ;
    count*2;
 }
 
