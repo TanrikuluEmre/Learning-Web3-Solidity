@@ -49,7 +49,47 @@ function add(int x,int y) external pure returns(int){ // pure contratın içinde
 function addToNum(int x) external view returns(int){ // view ise contratın içindeki değişkenler kullanıldığı zaman kullanılır.
 	return x+num;
 }
+#REVERT VE ASSERT
 
+// revert birden fazla şartı sağlamak için genellikle iç içe olan iflerde kullanılır. Fonksiyondan çıkar
+if(x<=50){
+  //kodlar
+  if(x==25){
+    revert();
+  }	
+}
+
+// assert gerçekten kötü olabilecek durumlar için kullanılır o yüzden koşulun false olma olasılığı olmamalıdır.
+
+c=a+b;
+assert(c>b);
+
+#FUNCTION MODIFIER
+
+//Basic Modifier : input almadan fonksiyonların üzerinde değişiklik yapabilmemizi sağlar
+modifier whenNotPaused(){
+   require(!paused,"paused");
+   _;
+}
+function inc() external whenNotPaused{
+   count++;
+}
+
+//Input Modifier : input alarak fonksiyonlar üzerinde değişiklik yapabilmemizi sağlar
+modifier cap(uint _x){
+   require(_x<100,"x>=100");
+   _;
+}
+function incBy(uint _x) external cap(_x){
+   count+=_x;
+}
+
+//Sandwich Modifier : Modifier'ın "_;"dan önceki kodları çalışır, sonra main fonksiyon(_;) ,daha sonra "_;"dan sonraki kodlar çalışır
+modifier sandwich(){
+   count++;
+   _;
+   count*2;
+}
 
 *****************************************************************************************************************
 
