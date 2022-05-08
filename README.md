@@ -100,6 +100,17 @@ modifier sandwich(){
    count*2;
 }
 
+# CONSTRUCTOR
+
+//Constructorlar contract deploy edildiğinde ilk başta ve bir kez çağrılır.
+
+address public owner;
+uint public x;
+constructor(uint _x) {
+   owner = msg.sender;
+   x=_x;
+}
+
 *****************************************************************************************************************
 
 int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
