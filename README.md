@@ -1,7 +1,7 @@
 # Web3-Solidity
 
 # MAPPING
-//mapping girilen değere göre başka bir değeri döndürmeye yarıyor
+//**mapping** girilen değere göre başka bir değeri döndürmeye yarıyor
 
 mapping(address => uint)  public AccountBalance; // Girilen adresin balance'ını geri döndürüyor. 
 
