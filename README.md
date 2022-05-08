@@ -103,4 +103,5 @@ modifier sandwich(){
 *****************************************************************************************************************
 
 int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
+
 int public maxInt=type(int).max; //256 bitlik int veri tipinin maximum sayı değerini verir
