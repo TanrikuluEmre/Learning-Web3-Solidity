@@ -67,24 +67,29 @@ assert(c>b);
 # FUNCTION MODIFIER
 
 //Basic Modifier : input almadan fonksiyonların üzerinde değişiklik yapabilmemizi sağlar
+
 modifier whenNotPaused(){
    require(!paused,"paused");
    _;
 }
+
 function inc() external whenNotPaused{
    count++;
 }
 
 //Input Modifier : input alarak fonksiyonlar üzerinde değişiklik yapabilmemizi sağlar
+
 modifier cap(uint _x){
    require(_x<100,"x>=100");
    _;
 }
+
 function incBy(uint _x) external cap(_x){
    count+=_x;
 }
 
 //Sandwich Modifier : Modifier'ın "_;"dan önceki kodları çalışır, sonra main fonksiyon(_;) ,daha sonra "_;"dan sonraki kodlar çalışır
+
 modifier sandwich(){
    count++;
    _;
