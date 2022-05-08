@@ -8,7 +8,7 @@ mapping(address => uint)  public AccountBalance; // Girilen adresin balance'ın�
 mapping(uint => string) UserIdToName // girilen ID'ye sahip kişinin ismini döndürür.
 
 # MSG.SENDER
-//**msg.sender**fonksiyonu kullanan kişinin adresini temsil eder
+//**msg.sender** fonksiyonu kullanan kişinin adresini temsil eder
 
 AccountBalance[msg.sender]++; // fonksiyonu çalıştıran kişinin balance'ını 1 arttır.
 
