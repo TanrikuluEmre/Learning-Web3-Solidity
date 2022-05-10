@@ -113,6 +113,25 @@ constructor(uint _x) {
    x=_x;
 }
 
+# Ownable
+
+// Kontratlarda ownable kullanılacaksa constructor içinde tanımlanır ve modifier olarak fonksiyonlarda kullanılır
+
+// onlyOwner fonksiyonu kullanılan fonksiyonları sadece owner olan adres çağırabilir.
+
+modifier onlyOwner(){
+   require(msg.sender==owner,"you are not the owner");
+   _;
+}
+
+// Yeni ownerı belirlemek için de setOwner fonksiyonu kullanılır 
+
+function setOwner(address _newOwner) external onlyOwner{
+    
+   require(_newOwner==owner,"Invalid address");
+   owner=_newOwner;
+}
+
 *****************************************************************************************************************
 
 int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
