@@ -115,9 +115,9 @@ constructor(uint _x) {
 
 # Ownable
 
-// Kontratlarda ownable kullanılacaksa constructor içinde tanımlanır ve modifier olarak fonksiyonlarda kullanılır
+// Kontratlarda **ownable** kullanılacaksa constructor içinde tanımlanır ve modifier olarak fonksiyonlarda kullanılır
 
-// onlyOwner fonksiyonu kullanılan fonksiyonları sadece owner olan adres çağırabilir.
+// **onlyOwner** fonksiyonu kullanılan fonksiyonları sadece owner olan adres çağırabilir.
 
 modifier onlyOwner(){
 
@@ -127,7 +127,7 @@ modifier onlyOwner(){
    
 }
 
-// Yeni ownerı belirlemek için de setOwner fonksiyonu kullanılır 
+// Yeni **ownerı** belirlemek için de setOwner fonksiyonu kullanılır 
 
 function setOwner(address _newOwner) external onlyOwner{
     
