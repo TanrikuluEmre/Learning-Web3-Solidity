@@ -15,7 +15,7 @@ AccountBalance[msg.sender]++; // fonksiyonu çalıştıran kişinin balance'ın�
 
 
 # REQUİRE
-//**require** if gibi çalışır şartı sağlamazsa fonksiyondan çıkar, genellikle o fonksiyonun birden fazla kez çağrılmasını önler
+//**require** if gibi çalışır şartı sağlamazsa fonksiyondan çıkar, genellikle o fonksiyonun birden fazla kez çağrılmasını önler.
 
 require(ownerZombiCount[msg.sender]==0,"u already have a zombie") // msg.sender'ın 0 tane zombisi varsa çalıştır yoksa metini yazdır.
 
