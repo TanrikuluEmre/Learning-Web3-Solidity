@@ -136,6 +136,25 @@ function setOwner(address _newOwner) external onlyOwner{
    owner=_newOwner;
 }
 
+
+# Array
+
+diziler her belirli değerleri içinde tutar ve çağırılmasına göre o değeri geri döndürür.
+
+uint[] public nums = [1,2,3,4]
+
+uint[3] public numsFixed = [3,4,5]
+
+nums.push(5); // [1,2,3,4,5]
+
+nums[2] = 777; // [1,2,777,4,5]
+
+delete nums[1]; // 1.değeri siler [1,0,777,4,5]
+
+nums.pop(); // son değeri diziden çıkarır
+
+nums.length; // dizinin uzunluğunu verir
+
 *****************************************************************************************************************
 
 int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
