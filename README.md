@@ -155,6 +155,27 @@ nums.pop(); // son değeri diziden çıkarır
 
 nums.length; // dizinin uzunluğunu verir
 
+## Array Remove
+
+uint[] public arr;
+
+    function remove(uint _index) public {
+        require(_index < arr.length, "index out of bound"); // girdinin dizinin boyutundan büyük olup olmadığına bakıyor
+
+        for (uint i = _index; i < arr.length - 1; i++) {   // silinecek sayıdan sonraki değerleri sondan bir önceki değere kadar bir arttırıyor
+	
+            arr[i] = arr[i + 1];
+        }
+        arr.pop();    // son değeri diziden çıkarıyor
+    }
+
+    function test() external {
+        arr = [1, 2, 3, 4, 5];
+        remove(2);
+        // [1, 2, 4, 5]
+       
+    }
+
 *****************************************************************************************************************
 
 int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
