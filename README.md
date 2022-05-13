@@ -176,6 +176,33 @@ uint[] public arr;
        
     }
 
+# STRUCT
+
+// structlar basitçe herhangi bir nesnenin özelliklerini tutar
+
+Struct Car{ // Car değerlerini tutan struct
+   string model;
+   
+   uint year;
+   
+   address owner;
+}
+
+Car memory Mercedes = Car("Mercedes",2020,msg.sender);
+
+//Structlar dizilerde tutulabilir
+
+Car[] public cars;
+
+cars.push(Mercedes);
+
+cars.push("Fiat",2015,msg.sender);
+
+Car storage _car=cars[0];
+
+_car.year = 2012;
+
+
 *****************************************************************************************************************
 
 int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
