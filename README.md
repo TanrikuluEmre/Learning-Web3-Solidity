@@ -181,6 +181,7 @@ uint[] public arr;
 // structlar basitçe herhangi bir nesnenin özelliklerini tutar
 
 Struct Car{ // Car değerlerini tutan struct
+
    string model;
    
    uint year;
