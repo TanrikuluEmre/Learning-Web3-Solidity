@@ -215,6 +215,24 @@ function mesaj(string calldata _message) external{
    emit sendMessage(msg.sender,_message);
 }
 
+# Inheritence
+
+// Sözleşmelerin birbirleriyle ilişkili olmasını yani miras alınan sözleşmenin public fonksiyonlarını ve değişkenlerini
+kullanabilmemizi sağlar
+
+contract A{
+
+   uint index;
+
+   function send() public {}
+
+}
+
+contract B is A{   //Contract B'yi deploy edersek A'daki send() ve indexi kullanabiliriz.
+	
+}
+
+
 
 *****************************************************************************************************************
 
