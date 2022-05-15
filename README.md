@@ -232,9 +232,19 @@ contract B is A{   //Contract B'yi deploy edersek A'daki send() ve indexi kullan
 	
 }
 
-contract C is A, B{ // Multiple Inheritence aşağıdaki şekilde yapılır ve ilk önce base class(A) yazılır.
+// Multiple Inheritence aşağıdaki şekilde yapılır ve ilk önce base class(A) yazılır.
 
+contract C is A, B { }
+
+// Miras alırken diğer contractların constractorlarının inputları aşağıdaki şekillerde tanımlanabilir
+
+contract C is A("x"), B("y") { }
+
+contract C is A, B{
+
+   constructor(string memory _name, string memory _text) A(_name) B(_text) {
    
+   }
 }
 
 *****************************************************************************************************************
