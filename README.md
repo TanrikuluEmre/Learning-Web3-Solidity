@@ -203,6 +203,18 @@ Car storage _car=cars[0];
 
 _car.year = 2012;
 
+# Event
+
+//blockchain üzerinde gerçekleşen hareketler transaction yapısına bakarak gözlemlenebilirilgili transaction ile 
+birlikte ne yapıldığı bilgisine erişilebilir.Event yapısı ise çok daha hızlı bir şekilde bu bilgiyi bize verebilmektedir.
+
+event sendMessage(address indexed recipient,string  message);
+
+function mesaj(string calldata _message) external{
+
+        emit sendMessage(msg.sender,_message);
+    }
+
 
 *****************************************************************************************************************
 
