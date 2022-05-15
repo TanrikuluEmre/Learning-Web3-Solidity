@@ -232,7 +232,10 @@ contract B is A{   //Contract B'yi deploy edersek A'daki send() ve indexi kullan
 	
 }
 
+contract C is A, B{ // Multiple Inheritence aşağıdaki şekilde yapılır ve ilk önce base class(A) yazılır.
 
+   
+}
 
 *****************************************************************************************************************
 
