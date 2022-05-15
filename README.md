@@ -212,8 +212,8 @@ event sendMessage(address indexed recipient,string  message);
 
 function mesaj(string calldata _message) external{
 
-        emit sendMessage(msg.sender,_message);
-    }
+   emit sendMessage(msg.sender,_message);
+}
 
 
 *****************************************************************************************************************
