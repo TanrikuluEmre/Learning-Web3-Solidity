@@ -247,6 +247,22 @@ contract C is A, B{
    }
 }
 
+# Payable
+
+// payable anahtar kelimesi kullanıldığı yere ether gönderebilme ve alabilme işlevi verir.
+
+    address payable public owner;
+    
+    constructor(){
+        owner = payable(msg.sender);
+    }
+    
+    function deposit() public payable {
+        
+    }
+    function balance() public view returns(uint){
+        return address(this).balance;
+    }
 *****************************************************************************************************************
 
 int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
