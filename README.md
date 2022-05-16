@@ -25,8 +25,11 @@
 //**Storage** fonksiyon bitse de aynı değeri tutar aynı ram ve harddisk ilişkisi gibi 
 
     Sandwich storage mySandwich = sandwiches[_index];//mySandwich sandwiches dizisine atılır.
+    
     mySandwich.status = "eaten";//mySandwich'in status değeri fonksiyon bitse bile "eaten" olarak kalır.
+    
     sandWich memory anotherSandwich = sandwiches[_index++];//anotherSandwich sandwiches dizisine atılır.
+    
     anotherSandwich.status = "eaten";//anotherSandwich'in status değeri fonksiyon bitince boş olarak kalır.
 
 
@@ -272,14 +275,14 @@ kullanabilmemizi sağlar
 
 //Fallback fonksiyonu çoğunlukla smart contract'ın ether almasını aktif etmek için kullanılır
 
-fallback() external payable {}
+    fallback() external payable {}
 
 //Receive fonksiyonu fallback ile işlevi görür farkı ise gönderilen veri boş olduğu zaman devreye girer.
 
-receive() external payable {}
+    receive() external payable {}
 
 *****************************************************************************************************************
 
-int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
+    int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
 
-int public maxInt=type(int).max; //256 bitlik int veri tipinin maximum sayı değerini verir
+    int public maxInt=type(int).max; //256 bitlik int veri tipinin maximum sayı değerini verir
