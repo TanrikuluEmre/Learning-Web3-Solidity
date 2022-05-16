@@ -263,6 +263,17 @@ contract C is A, B{
     function balance() public view returns(uint){
         return address(this).balance;
     }
+    # Fallback ve Receive
+    
+
+//Fallback fonksiyonu çoğunlukla smart contract'ın ether almasını aktif etmek için kullanılır
+
+fallback() external payable {}
+
+//Receive fonksiyonu fallback ile işlevi görür farkı ise gönderilen veri boş olduğu zaman devreye girer.
+
+receive() external payable {}
+
 *****************************************************************************************************************
 
 int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
