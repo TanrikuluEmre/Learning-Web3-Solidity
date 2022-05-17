@@ -280,6 +280,38 @@ kullanabilmemizi sağlar
 //Receive fonksiyonu fallback ile işlevi görür farkı ise gönderilen veri boş olduğu zaman devreye girer.
 
     receive() external payable {}
+   
+# Transfer, Send ve Call
+
+// Üçüde contractlar arasında eth göndermek için kullanılır fakat genellikle Transfer ve Call fonksiyonları tercih edilir.
+
+// Transfer fonksiyonunda alıcı contract içinde fallback veya receive olması gerek yoksa transfer çağrısı hata verir, gas limiti  2300'dür.
+
+    function sendViaTransfer(address payable _to) external payable {
+    
+    _to.transfer(123);
+
+    }
+
+//Send fonksiyonu Transfer'e benzerdir. Gas limiti 2300'dür. Transfer'den farkı geriye bool döndürür.
+
+    function sendViaSend(address payable _to) external payable {
+    
+    bool sent = _to.send(123);
+    require(sent,"send failed");
+
+    }
+
+//Call fonksiyonu en çok tercih edilendir. Gas limiti yoktur, bool ve veri geri döndürebilir
+
+    function sendViaCall(address payable _to) external payable {
+    
+    (bool success, ) = _to.call{value : 123}("");
+    require(success,"call failed");
+
+    }
+ 
+
 
 *****************************************************************************************************************
 
