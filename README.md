@@ -311,6 +311,25 @@ kullanabilmemizi sağlar
 
     }
  
+ # Contract'a Ether Gönderme ve Alma Örneği
+ 
+    contract EtherWallet{
+
+        address payable public owner;
+        constructor(){
+            owner = payable(msg.sender);
+        }
+        receive() external payable{}
+
+        function withDraw(uint _amount) external {
+            require(msg.sender==owner,"you are not the owner");
+            payable(msg.sender).transfer(_amount);
+        }
+        function getBalance() external view returns(uint){
+
+            return address(this).balance;
+        }
+    }
 
 
 *****************************************************************************************************************
