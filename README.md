@@ -331,6 +331,51 @@ kullanabilmemizi sağlar
         }
     }
 
+# Interface ve Abstract Contractlar
+
+// Abstract contractlar içerilerinde herhangi bir uygulama yapmazlar sadece tanımlama içerirler. içerikleri başka
+contractlarda miras alınarak tanımlanır.
+
+    abstract contract Feline {
+        function utterance() public virtual returns (bytes32);
+    }
+
+    contract Cat is Feline {
+        function utterance() public override returns (bytes32) { return "miaow"; }
+    }
+
+// Interfaceler abstract contractlara benzerler fakat daha fazla kısıtlamaya sahiptirler.
+// Diğer contractlardan miras alamazlar fakat diğer interfacelerden miraslanabilirler
+// Bütün tanımlanan fonksiyonları external olmak zorundadır
+// İçerisinde constructor ve değişken tanımlanamaz.
+
+    interface Token {
+        enum TokenType { Fungible, NonFungible }
+        struct Coin { string obverse; string reverse; }
+        function transfer(address recipient, uint amount) external;
+    }
+
+# Call
+
+// Amacımız başka bir contract içerisindeki fonksiyonu çağırarak o contract'a wei göndermek.
+
+    contract Testcall{
+    
+       fallback() external payable{}
+
+       function foo(string memory _message,uint _x) external payable returns(bool,uint){
+     
+        return(true,999);
+     }
+    }
+    contract Call{
+
+     function callFoo(address _test) external{
+ 
+     (bool success,bytes memory _data) = _test.call{value:111}(abi.encodeWithSignature("foo(string,uint256)","call foo",123));
+
+     }
+    }
 
 *****************************************************************************************************************
 
