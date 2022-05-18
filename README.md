@@ -425,6 +425,31 @@ contractlarda miras alınarak tanımlanır.
           return Math.Max(x,y);
      }   
     }
+ // Library array örneği
+ 
+    library arrayLib{
+        function find(uint[] storage arr, uint x) internal view returns(uint){
+            for(uint i=0;i<arr.length;i++){
+                if(arr[i]==x){
+                    return i;
+                }
+            }
+            revert("not found");
+        }
+    }
+
+    contract CallTestContract{
+
+    using arrayLib for uint[];
+    uint[] public arr = [1,2,3];
+   
+    function Testarray() external view returns(uint) {
+        
+        return arr.find(2);
+
+     }
+   
+    }
 
 *****************************************************************************************************************
 
