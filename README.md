@@ -379,7 +379,7 @@ contractlarda miras alınarak tanımlanır.
 
 # New
 
-//Amacımız AccountFactory contractı ile Account contractına adres gönderip yeni bir hesap kurma işlemi
+// Amacımız AccountFactory contractı ile Account contractına adres gönderip yeni bir hesap kurma işlemi
 
     Contract Account{
 
