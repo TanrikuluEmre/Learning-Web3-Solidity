@@ -459,6 +459,16 @@ contractlarda miras alınarak tanımlanır.
 
         return keccak256(abi.encodePacked(text,num,addr));
      }
+
+// encode ve encodePacked arasındaki fark encodepacked'in çıktısı encode'a göre daha basittir
+     
+     function encode(string memory text0,string memory text1) external pure returns(bytes memory){
+
+         return abi.encode(text0,text1);
+     }
+     function encodePacked(string memory text0,string memory text1) external pure returns(bytes memory){
+
+         return abi.encodePacked(text0,text1);
      
 
 
