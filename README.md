@@ -450,6 +450,17 @@ contractlarda miras alınarak tanımlanır.
      }
    
     }
+    
+# Hash
+
+// Hash fonksiyonu herhangi bir girdi alır ve karşılığında eşsiz bir çıktı verir.
+
+     function Hash(string memory text,uint num,address addr) external pure returns(bytes32){
+
+        return keccak256(abi.encodePacked(text,num,addr));
+     }
+     
+
 
 *****************************************************************************************************************
 
