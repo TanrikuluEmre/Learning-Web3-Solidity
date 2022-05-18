@@ -377,6 +377,35 @@ contractlarda miras alınarak tanımlanır.
      }
     }
 
+# New
+
+//Amacımız AccountFactory contractı ile Account contractına adres gönderip yeni bir hesap kurma işlemi
+
+    Contract Account{
+
+     address public bank;
+
+     address public owner;
+
+     constructor(address _owner) payable {
+       
+       bank=msg.sender
+       owner = _owner;
+ 
+      }
+    }
+
+     contract AccountFactory{
+ 
+      Account[] public accounts;
+      function createAccount(address _owner) external payable{
+
+        Account account = new Account{value : 111}(_owner);
+        accounts.push(account)
+      }        
+
+     }
+
 *****************************************************************************************************************
 
     int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
