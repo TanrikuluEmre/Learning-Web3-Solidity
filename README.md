@@ -469,6 +469,8 @@ contractlarda miras alınarak tanımlanır.
      function encodePacked(string memory text0,string memory text1) external pure returns(bytes memory){
 
          return abi.encodePacked(text0,text1);
+	 
+	 }
      
 
 
