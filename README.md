@@ -5,7 +5,7 @@
 
     mapping(address => uint)  public AccountBalance; // Girilen adresin balance'ını geri döndürüyor. 
 
-    mapping(uint => string) UserIdToName // girilen ID'ye sahip kişinin ismini döndürür.
+    mapping(uint => string) UserIdToName // girilen ID'ye sahip kişinin ismini döndürür
 
 # MSG.SENDER
 //**msg.sender** fonksiyonu kullanan kişinin adresini temsil eder
