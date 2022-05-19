@@ -347,7 +347,7 @@ contractlarda miras alınarak tanımlanır.
 // Interfaceler abstract contractlara benzerler fakat daha fazla kısıtlamaya sahiptirler.
 // Diğer contractlardan miras alamazlar fakat diğer interfacelerden miraslanabilirler
 // Bütün tanımlanan fonksiyonları external olmak zorundadır
-// İçerisinde constructor ve değişken tanımlanamaz.
+// İçerisinde constructor ve değişken tanımlanamaz
 
     interface Token {
         enum TokenType { Fungible, NonFungible }
