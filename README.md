@@ -471,7 +471,12 @@ contractlarda miras alınarak tanımlanır.
          return abi.encodePacked(text0,text1);
 	 
 	 }
-     
+   
+# Access Control
+
+// Admin tarafından giriş izni verilebilir, izin geri alınabilir.
+
+|[Access Control](01_AccessControl.sol)|
 
 
 *****************************************************************************************************************
