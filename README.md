@@ -476,7 +476,7 @@ contractlarda miras alınarak tanımlanır.
 
 // Admin tarafından giriş izni verilebilir, izin geri alınabilir.
 
-|[Access Control](01_AccessControl.sol)|
+|[Access Control](AccessControl.sol)|
 
 
 *****************************************************************************************************************
