@@ -44,7 +44,7 @@ contract HelloWorld_Bank{
             return balances[msg.sender];
         }
        
-        function contractBalance() external view returns(uint){
+        function contractBalance() external view returns(uint) onlyOwner{
 
             return address(this).balance;
         }
