@@ -484,6 +484,22 @@ contractlarda miras alınarak tanımlanır.
 
 |[HelloWorld_Bank](HelloWorld_Bank.sol)|
 
+# Kill Contract
+
+// contractı blockchainden silmeye yarar ve balance'ı msg.sender'a gönderir.
+
+    contract Kill{
+    
+    constructor() payable {}
+
+    function kill() external{
+        
+    selfdestruct(payable(msg.sender));}
+ 
+    function testCall() external pure returns(uint){
+            return 123;
+     }
+    }
 
 *****************************************************************************************************************
 
