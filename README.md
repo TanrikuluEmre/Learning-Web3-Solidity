@@ -478,6 +478,12 @@ contractlarda miras alınarak tanımlanır.
 
 |[Access Control](AccessControl.sol)|
 
+# HelloWorldBank
+
+// Contract'a deposit ile eth aktarılabilir, Withdraw ve Withdrawall fonksiyonu ile geri çekilebilir bir banka uygulaması.
+
+|[HelloWorld_Bank](HelloWorld_Bank.sol)|
+
 
 *****************************************************************************************************************
 
