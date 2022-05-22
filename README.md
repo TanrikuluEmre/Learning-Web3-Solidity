@@ -501,6 +501,12 @@ contractlarda miras alınarak tanımlanır.
      }
     }
 
+# PiggyBank
+
+// Domuz kumbarası, adından da anlaşılacağı gibi contract'a tekrar tekrar ether gönderilebiliyor fakat geri çekim işlemi 
+selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şeklinde çalışıyor.
+
+|[Piggy_Bank](PiggyBank.sol)|
 *****************************************************************************************************************
 
     int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
