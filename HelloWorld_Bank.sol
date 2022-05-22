@@ -34,10 +34,11 @@ contract HelloWorld_Bank{
         }
     
     
-        function withdrawAll() public payable  {
-
-            payable(msg.sender).transfer(getBalance());
+        function withdrawAll() public payable  onlyOwner{
+            
             balances[msg.sender] -= getBalance();
+            payable(msg.sender).transfer(getBalance());
+            
     }
 
         function getBalance () public view returns (uint){
