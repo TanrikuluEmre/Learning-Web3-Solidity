@@ -26,7 +26,7 @@ contract HelloWorld_Bank{
             balances[msg.sender] += msg.value;
         }
 
-        function withdraw (uint withdrawAmount) public payable {
+        function withdraw (uint withdrawAmount) public  {
             require (withdrawAmount <= balances[msg.sender]);
             
             balances[msg.sender] -= withdrawAmount;
