@@ -514,6 +514,12 @@ selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şekl
 
 |[ERC-20](ERC20.sol)|
 
+# ERC-721
+
+// Ethereum blok zincirinde değiştirilemeyen ve benzersiz token'ların nasıl oluşturulacağını açıklayan ücretsiz, açık bir standarttır.
+// Basitçe NFT'lerin Id'sini ve sahiplerinin adreslerini tutar. Mint, Burn, Transfer gibi fonksiyonları içerir.
+
+|[ERC-721](ERC721.sol)|
 
 *****************************************************************************************************************
 
