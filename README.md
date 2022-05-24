@@ -521,6 +521,12 @@ selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şekl
 
 |[ERC-721](ERC721.sol)|
 
+# Dutch Auction
+
+// Basitçe NFT'leri tersten açık arttırmaya sunmak. Fiyat her saniye belli bir wei düşer ve satın alınınca miktar satıcıya , NFT de alıcıya verilir.
+
+|[Dutch Auction](DutchAuction.sol)|
+
 *****************************************************************************************************************
 
     int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
