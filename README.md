@@ -507,6 +507,14 @@ contractlarda miras alınarak tanımlanır.
 selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şeklinde çalışıyor.
 
 |[Piggy_Bank](PiggyBank.sol)|
+
+# ERC20
+
+// ERC20 Token'ların Etherium sistemi içinde nasıl çalışacağını belirler içerisinde mint ve burn fonksiyonlarını içerebilir.
+
+|[ERC-20](ERC20.sol)|
+
+
 *****************************************************************************************************************
 
     int public minInt=type(int).min; //256 bitlik int veri tipinin minimum sayı değerini verir
