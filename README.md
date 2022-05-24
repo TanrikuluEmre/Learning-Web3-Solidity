@@ -521,11 +521,19 @@ selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şekl
 
 |[ERC-721](ERC721.sol)|
 
+# English Auction
+
+// Basitçe NFT'leri açık arttırmaya sunma kodu. Herkes fiyat teklifi verebilir zamanı dolunca NFT en yüksek fiyatı veren kişiye verilir.
+
+|[English Auction ](EnglishAuction.sol)|
+
 # Dutch Auction
 
 // Basitçe NFT'leri tersten açık arttırmaya sunmak. Fiyat her saniye belli bir wei düşer ve satın alınınca miktar satıcıya , NFT de alıcıya verilir.
 
 |[Dutch Auction](DutchAuction.sol)|
+
+
 
 *****************************************************************************************************************
 
