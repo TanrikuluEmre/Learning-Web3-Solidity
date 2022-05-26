@@ -536,6 +536,7 @@ selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şekl
 # Contractın Adresini Deploy Etmeden Bulmak
 
 // Contract2Factory, 0.8'den itibaren bir contractı new komutu ile başka bir contract'dan oluşturulabilir. 
+
 // Contract deploy edilmeden adresine ulaşılabilir.
 
 |[Create2Factory](Create2Factory.sol)|
