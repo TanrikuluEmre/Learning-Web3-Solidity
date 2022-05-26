@@ -533,6 +533,12 @@ selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şekl
 
 |[Dutch Auction](DutchAuction.sol)|
 
+# Contractın Adresini Deploy Etmeden Bulmak
+
+// Contract2Factory, 0.8'den itibaren bir contractı new komutu ile başka bir contract'dan oluşturulabilir. 
+// Contract deploy edilmeden adresine ulaşılabilir.
+
+|[Contract2Factory](Contract2Factory.sol)|
 
 
 *****************************************************************************************************************
