@@ -529,7 +529,7 @@ selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şekl
 
 # Dutch Auction
 
-// Basitçe NFT'leri tersten açık arttırmaya sunmak. Fiyat her saniye belli bir wei düşer ve satın alınınca miktar satıcıya , NFT de alıcıya verilir.
+// Basitçe NFT'leri tersten açık arttırmaya sunmak. Fiyat her saniye belli bir wei düşer ve satın alınınca miktar satıcıya , NFT de alıcıya verilir
 
 |[Dutch Auction](DutchAuction.sol)|
 
