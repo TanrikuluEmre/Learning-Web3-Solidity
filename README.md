@@ -541,6 +541,12 @@ selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şekl
 
 |[Create2Factory](Create2Factory.sol)|
 
+# Multi Call
+
+// Bir for döngüsü ve statik çağrı kullanarak birden çok sorguyu toplayan bir sözleşme örneği
+
+|[MultiCall](MultiCall.sol)|
+
 
 *****************************************************************************************************************
 
