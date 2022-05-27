@@ -547,6 +547,12 @@ selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şekl
 
 |[MultiCall](MultiCall.sol)|
 
+# Abi Decode
+
+// Encode verileri bayt'a dönüştürür Decode ise girilen baytları veriye dönüştürür.
+
+|[AbiDecode](AbiDecode.sol)|
+
 
 *****************************************************************************************************************
 
