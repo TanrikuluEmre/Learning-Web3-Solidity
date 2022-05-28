@@ -553,6 +553,12 @@ selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şekl
 
 |[AbiDecode](AbiDecode.sol)|
 
+# Save Gas
+
+// 50908 Gas harcayan bir fonksiyonu 48047'ye kadar düşürdük.
+
+|[SaveGas](SaveGas.sol)|
+
 
 *****************************************************************************************************************
 
