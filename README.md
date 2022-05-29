@@ -1,6 +1,6 @@
 # Web3-Solidity
 
-# Kağıt Kalem İle Bitcoin Madenciliği Mantığı
+# Kağıt Kalem İle Bitcoin Madenciliği
 
 |[Kendi Makale Çevirim](https://medium.com/@tanrikuluemre571/kağıt-kalem-i̇le-bitcoin-mining-mantığı-31d4a1858bc2)|
 
