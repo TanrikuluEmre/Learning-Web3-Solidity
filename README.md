@@ -2,7 +2,7 @@
 
 # Kağıt Kalem İle Bitcoin Madenciliği
 
-|[Kendi Makale Çevirim](https://medium.com/@tanrikuluemre571/kağıt-kalem-i̇le-bitcoin-mining-mantığı-31d4a1858bc2)|
+|[Kendi Makale Çevirim](https://medium.com/@tanrikuluemre571/kalem-ve-kağıtla-bitcoin-madenciliği-6ca941a8f2d7)|
 
 # MAPPING
 //**mapping** girilen değere göre başka bir değeri döndürmeye yarıyor
