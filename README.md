@@ -567,6 +567,10 @@ selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şekl
 
 |[SaveGas](SaveGas.sol)|
 
+# Hardhat ve Ethers ile Testing
+
+|[İTÜ HARDHAT KURULUM KILAVUZU](https://www.youtube.com/watch?v=0stIYoi3KG8&list=WL&index=95&t=445s)|
+
 
 *****************************************************************************************************************
 
