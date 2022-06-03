@@ -1,10 +1,10 @@
 # Web3-Solidity
 
-# Bitcoin Madenciliği
+# Bitcoin Madenciliğinin Arka Planı
 
 |[Kendi Çevirim](https://medium.com/@tanrikuluemre571/kağıt-kalem-i̇le-bitcoin-mining-mantığı-31d4a1858bc2)|
 
-# Kağıt Kalem İle Bitcoin Madenciliği
+# SHA-256'nın Bir Turu
 
 |[Kendi Makalem](https://medium.com/@tanrikuluemre571/kalem-ve-kağıtla-bitcoin-madenciliği-6ca941a8f2d7)|
 
