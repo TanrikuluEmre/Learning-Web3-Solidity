@@ -569,7 +569,7 @@ selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şekl
 
 # Hardhat ve Ethers ile Testing
 
-|[İTÜ HARDHAT KURULUM KILAVUZU](https://www.youtube.com/watch?v=0stIYoi3KG8&list=WL&index=95&t=445s)|
+|[İTÜ HARDHAT KURULUM KILAVUZU](https://github.com/itublockchain/solidity-bootcamp21/tree/master/18_Hardhat%26Ethers)|
 
 
 *****************************************************************************************************************
