@@ -571,6 +571,17 @@ selfdestruct kullanarak contract'ı imha edip balance'ı owner'a gönderme şekl
 
 |[İTÜ HARDHAT KURULUM KILAVUZU](https://github.com/itublockchain/solidity-bootcamp21/tree/master/18_Hardhat%26Ethers)|
 
+# MerkleTree
+
+// MerkleTree bir kök ve onun yaprakları olan bloklardan oluşur. En alttaki yaprakların birbirleriyle hashlenmesi sonucunda bir üst yaprak oluşur.
+// Örnekteki kodda 8 adet adres var bunlar ilk önce hash fonksiyonuna girer ve en alt yapraklar oluşur. Bu yaprakların hashlenmesi sonucunda bir üst yapraklar oluşur.
+// Böylece en sonunda root dediğimiz en üst yaprak oluşur. Verify fonksiyonunu kullanmak için diğer yaprakları oluşturabilmemiz için verilmesi gereken yapraklar 
+verilmelidir. Mesela 0. yaprağı onaylamak için 1. yaprak, 2. ve 3. yaprakların hashlediği üst blok, 4-5 ve 6-7 'nin hashlenip bulunduğu üst blokların hashlenmiş
+hali verilmelidir. Toplamda 3 adet proof hashi verilmelidir.
+
+|[Merkle Tree](MerkleTree.sol)|
+
+
 
 *****************************************************************************************************************
 
